@@ -43,7 +43,7 @@ class MusicLibraryController
       when 'play song'
           self.play_song
       else
-          puts "please select a valid option"
+          "please select a valid option"
       end
     end
   end
