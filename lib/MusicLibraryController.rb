@@ -42,9 +42,9 @@ class MusicLibraryController
           self.list_songs_by_genre
       when 'play song'
           self.play_song
-      else 
+      else
           puts "please select a valid option"
-        end
+      end
     end
   end
 
