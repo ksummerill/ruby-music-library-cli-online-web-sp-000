@@ -110,4 +110,7 @@ class MusicLibraryController
     end
   end
 
+
+  # MUSIC LIBRARY CONTROLLER - CLI COMMANDS
+
 end
