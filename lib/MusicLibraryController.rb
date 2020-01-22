@@ -32,6 +32,18 @@ class MusicLibraryController
       case input
       when 'list songs'
           self.list_songs
+      when 'list artists'
+          self.list_artists
+      when 'list genres'
+          self.list_genres
+      when 'list artist'
+          self.list_songs_by_artist
+      when 'list genre'
+          self.list_songs_by_genre
+      when 'play song'
+          self.play_song
+      else 
+          puts "please select a valid option"
         end
     end
   end
@@ -113,10 +125,6 @@ class MusicLibraryController
       puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
-
-
-  # MUSIC LIBRARY CONTROLLER - CLI COMMANDS
-
 
 
 end
