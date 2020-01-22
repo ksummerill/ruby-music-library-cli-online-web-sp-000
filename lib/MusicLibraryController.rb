@@ -39,9 +39,8 @@ class MusicLibraryController
   # how do I list out in numbered order
   def list_songs
     # print songs out in alphabetical order with index
-    # binding.pry
+    # 'each.with_index' allows for index to start at 1
     Song.all.uniq.sort { |title1, title2| title1.name <=> title2.name }.each.with_index(1) do |song, i|
-      # index_plus_1 = i + 1
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
   end
