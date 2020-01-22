@@ -113,4 +113,8 @@ class MusicLibraryController
 
   # MUSIC LIBRARY CONTROLLER - CLI COMMANDS
 
+  def self.list_songs
+    list_songs
+  end
+
 end
